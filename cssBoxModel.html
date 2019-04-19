@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+	<meta charset="utf-8">
+	<title>CSS Básico</title>
+	<style type="text/css">
+
+		@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Playfair+Display');
+
+
+
+		body{
+	background-color: #272822;
+	color:rgb(248,248,242);
+}
+
+	h1{
+		color: white;
+	}
+	h2{
+		color: purple;
+		font-family: 'Noto Serif', serif;
+	}
+	p{
+		font-family: 'Playfair Display', serif;
+		color: red;
+		text-align: justify;
+	}
+		/*Seletor de pseudo */
+	main p:nth-of-type(2n){ /*Even / Par*/
+			background-color: red;
+			color: yellow;
+		}
+		main p:nth-of-type(odd){ /*odd / Impar*/
+			background-color: yellow;
+			color: red;
+		}
+
+		main p:hover{/*QUando o mouse passa por cima*/
+			background-color: blue; 
+			width: fit-content;
+		}
+
+	span{
+		font-weight: bold;
+		color: orange;
+	}
+	/*SEletor de classe/Classificação*/
+	/*Utilizasse .(ponto) para caixa*/
+	.caixa{
+		width: 690px;
+		height: 300px;
+		border: 2px yellow ridge;
+		margin: 0 auto;
+		padding: 60px 30px 0px 30px;
+	}
+	.circulo{
+		/*Mesma altura e largura*/
+		width: 200px;height:  200px;
+		border: 2px dotted yellow;
+		border-radius: 50%;/*Arredonda*/
+		float: left; /*Coloca uma ao lado da outra*/
+		box-sizing: border-box;
+
+		padding: 60px;
+		margin-left: 30px;
+	}
+	.circulo:hover{
+		box-shadow: 0 0 10px red;
+	}
+
+	.sombra{
+		box-shadow: 5px 5px 10px white;
+		border-radius: 20px;
+	}
+
+	#principal{
+		background-color: black;
+	}
+	#primeira{
+		background-color: purple;
+	}
+	#segunda{
+		background-color: brown;
+	}
+	#terceira{
+		background-color: blue;
+	}
+
+	</style>
+	
+</head>
+<body>
+		<div id = "principal" class="caixa sombra"><!-- Dentro da DIV -->
+			<div id = "primeira" class= "circulo">
+					<p>Couteudo <span>1ª DIV</span></p>
+			</div>
+				<div  id = "segunda" class= "circulo">
+					<p>Conteudo <span>2ª DIV</span></p>
+					
+				</div>
+				<div id = "terceira" class= "circulo">
+					<p>Conteudo <span>3ª DIV</span></p>
+				 </div>
+
+		
+
+
+		</div><!-- fora da DIV -->
+
+
+		<h1>Olá Maravilhoso Mundo</h1>
+<main>
+		<h2>PRIMEIRO PARAGRAFO</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, leo at rhoncus ullamcorper, libero ipsum pretium mi, vitae feugiat purus erat eget erat. Suspendisse sed mollis libero. Nunc ut augue ut elit viverra varius sed ac ex. Quisque posuere tellus sed ante fringilla sodales. Nulla consectetur eros vitae nulla sollicitudin, in sodales ante pulvinar. Aenean feugiat pellentesque nisi, eget pulvinar magna auctor vitae. Nam ac rhoncus diam. Sed dolor mi, accumsan ac lectus tristique, iaculis scelerisque quam. Praesent eget tristique quam. Mauris sagittis quam placerat placerat venenatis.</p>
+
+	<h2>SEGUNDO PARAGRAFO</h2>
+	<p>Nullam vitae turpis non lacus feugiat pellentesque. Quisque justo magna, maximus ut dolor at, feugiat consectetur est. Nam nibh tellus, malesuada id felis eget, pretium placerat odio. Morbi vitae dui congue, feugiat dolor vel, varius metus. Quisque id rhoncus nisi. Ut luctus lectus elit, vel pulvinar nulla vestibulum ut. Aliquam ac elit bibendum, dapibus sem vel, lacinia urna. Sed ut eros consequat, dictum ligula quis, suscipit eros. Aenean gravida ligula eget lacinia feugiat. Etiam venenatis, libero a maximus cursus, est dolor consectetur nibh, id lobortis lacus odio sed augue. Aliquam erat volutpat. Quisque euismod interdum leo, eget sagittis massa eleifend id. Nunc et faucibus dui. Curabitur facilisis laoreet orci eget tempor.</p>
+
+	<h2>TERCEIRO PARAGRAFO</h2>
+	<p>Curabitur posuere rutrum nibh, ac rutrum sapien. Maecenas efficitur ante nec felis consequat molestie. In pulvinar tellus mi, sed condimentum quam ornare non. Phasellus dapibus neque fringilla nibh sollicitudin, venenatis tincidunt nisi viverra. Morbi ut risus metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis mi erat. Aliquam erat volutpat. Sed lectus mi, fringilla condimentum augue vel, lobortis molestie risus. Pellentesque lacinia maximus tempus. Maecenas in diam laoreet ante lobortis pellentesque sit amet vitae purus. Donec commodo malesuada lacus sit amet venenatis. Nunc et erat volutpat, eleifend quam vitae, volutpat dolor. Vestibulum aliquet vulputate quam, a fermentum dui sollicitudin eu. Nullam pharetra condimentum eros vitae gravida. Fusce eu dapibus elit.</p>
+
+	<h2>QUARTO PARAGRAFO</h2>
+	<p>Vivamus interdum nisl vitae augue tempus lacinia. Duis ac velit ante. Phasellus quis imperdiet metus, id commodo turpis. Fusce a ultrices nisi. Fusce et ligula id est mattis tempus. Donec at eleifend elit. Aliquam sapien mi, porttitor et ligula vitae, interdum congue lectus. Mauris vel dolor semper, dignissim turpis quis, laoreet nisi.</p>
+
+	<h2>QUINTO PARAGRAFO</h2>
+	<p>Ut suscipit quis turpis non auctor. Quisque erat felis, vehicula et consequat id, sollicitudin non ligula. Aliquam commodo diam faucibus elementum placerat. Donec tempus ut nulla sed pretium. Proin justo sem, aliquam vitae elementum ut, pulvinar in tellus. Curabitur at odio in erat tristique mattis. Sed pretium metus a mauris tempor maximus. Etiam vel enim aliquet lorem interdum faucibus ut placerat dui. Mauris vitae mattis lorem, eu convallis diam. In hac habitasse platea dictumst. Nunc in luctus erat, vitae convallis ligula. Curabitur consectetur eu tellus nec condimentum. In sagittis euismod neque non accumsan. Maecenas at scelerisque lectus. Sed eget dolor dolor. Nam ac dictum lectus.</p>
+
+	<h2>SEXTO PARAGRAFO</h2>
+	<p>Etiam efficitur tortor vel iaculis suscipit. Morbi ut sodales sapien. Aliquam accumsan feugiat pulvinar. Praesent mattis massa ut porta porttitor. Aliquam non urna non orci efficitur tempor id rhoncus ipsum. Pellentesque vestibulum posuere finibus. Nunc eget nisi sit amet lorem ultricies ultricies. Ut eleifend dapibus efficitur. Fusce ipsum enim, condimentum ut augue eu, posuere porttitor lorem.</p>
+
+	<h2>SETEMO PARAGRAFO</h2>
+	<p>In accumsan ligula risus, eget vehicula ex faucibus sit amet. Cras commodo ligula et posuere euismod. Suspendisse potenti. Duis vel sodales dolor, eu convallis dui. Nunc non consectetur lacus, sit amet vehicula massa. Aliquam sed mi bibendum, rhoncus tortor vitae, sodales dolor. Maecenas semper maximus orci nec pharetra. Proin laoreet ultrices magna vel elementum. Curabitur a finibus lacus, ac consectetur lectus. Ut leo velit, lacinia a pulvinar in, pellentesque molestie magna. Donec rhoncus auctor orci eget eleifend. Sed venenatis eget diam et facilisis. Donec eu facilisis neque. Phasellus nec nisi eget tortor fermentum efficitur.</p>
+
+	<h2>OITAVO PARAGRAFO</h2>
+	<p>Vestibulum rhoncus nunc vitae tortor porta, eget porta neque suscipit. Nullam auctor porta vulputate. Pellentesque sodales, lacus sit amet sagittis viverra, est nisi mollis massa, at blandit nisi nulla et turpis. Fusce sit amet ante massa. Integer porttitor sed ligula non vestibulum. Quisque egestas, enim id elementum mattis, ipsum urna laoreet elit, a hendrerit augue tellus pulvinar diam. Nullam in fermentum tellus, id condimentum nulla. Aenean blandit ante quis placerat maximus. Integer finibus purus sed ante imperdiet pharetra. Morbi volutpat maximus pretium. Etiam elit nunc, luctus id ullamcorper in, ultricies a eros.</p>
+
+	<h2>NONO PARAGRAFO</h2>
+	<p>Nunc mollis odio id pellentesque lacinia. Cras condimentum nisl ut turpis varius egestas. Fusce eu finibus lacus. Pellentesque imperdiet gravida nunc, id lacinia lorem pretium sed. Mauris ut felis eget urna rutrum vehicula. Phasellus interdum feugiat lacinia. Phasellus vehicula fringilla lorem id ullamcorper. Nunc pharetra lorem lacinia erat semper, non varius erat hendrerit. Donec malesuada turpis libero, nec ornare mi tempus vitae. Curabitur consectetur neque non iaculis eleifend. Quisque ut magna ex. Morbi at sem laoreet, posuere dui quis, fermentum turpis. Sed vulputate orci vel mauris eleifend, ut lobortis felis suscipit. Curabitur id purus ultricies, condimentum libero elementum, viverra lorem. Maecenas ac ultricies orci, sed rutrum enim.</p>
+
+
+	<h2>DÉCIMO PARAGRAFO</h2>
+	<p>Nullam mattis dapibus ultricies. Pellentesque a ex sed sapien pulvinar tincidunt. Aenean in velit eleifend, scelerisque lectus sed, faucibus ipsum. Aenean turpis orci, bibendum ac odio ac, euismod aliquam nunc. Nunc sit amet ipsum risus. Curabitur gravida libero tempor tellus interdum mattis. Nunc feugiat ipsum ac viverra iaculis. Integer cursus, augue vel gravida dapibus, nibh orci molestie ipsum, id faucibus mi ante nec mauris. Phasellus vel iaculis metus. Aenean metus eros, ultrices a dapibus in, ullamcorper pretium erat. Phasellus eget diam vel nibh finibus aliquet. Donec pulvinar felis ornare, tempus tortor id, blandit massa.</p>
+	</main>
+</body>
+</html>
